@@ -49,7 +49,7 @@
         <ul>
             <li><input type="text" class="abkuang" name="ext_bianhao" placeholder="报告编码" id="name" /></li>
             <!--<li><input type="text" class="abkuang" name="ext_shoji" placeholder="手机" id="tel" /></li>-->
-            <li><input type="submit" value="查询"/ class="abcha" id="adminbuycx"></li>
+            <li><input type="button" value="查询"/ class="abcha" id="adminbuycx"></li>
         </ul>
     </form>
 </div>
@@ -57,14 +57,6 @@
 <div class="adminbuy_foot">
     <p>PONY    谱尼测试证书查询系统 <a href="http://beian.miit.gov.cn" target="_blank" rel="nofllow">苏ICP12345678</a></p>
 </div>
-<script>
-    $(function(){
-        $('#adminbuycx').click(function(){
-            if($('#name').val()==''){alert('请输入报名编码！'); $("#name").focus(); return false;}
-// 			if ($("#tel").val() == "") { alert("请输入你的手机！"); $("#tel").focus(); return false; } 
-// 			if (!$("#tel").val().match(/^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(16[0-9]{1})|(17[0-9]{1})|(18[0-9]{1})|(19[0-9]{1}))+\d{8})$/)) { alert("手机号码格式不正确！"); $("#tel").focus(); return false;} 
-        })
-    })
-</script>
+<script src="/skin/js/main.js"></script>
 </body>
 </html>
