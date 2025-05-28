@@ -1,0 +1,42 @@
+/* AB模板网 整站模板下载 */
+/* 模板：Www.AdminBuy.Cn */
+/* 仿站：Fang.AdminBuy.Cn */
+/* 素材：Sc.AdminBuy.Cn */
+/* js特效：js.AdminBuy.Cn */
+/* 在线工具 Tool.Adminbuy.Cn */
+/* QQ：9490489 */
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0; list-style:none; font-family: 微软雅黑; font-size:14px}
+body{color:#222}
+a{text-decoration: none; color:#222}
+img{ border:none}
+
+.adminbuy_head{ text-align:center; padding:50px 0; }
+.adminbuy_head p{font-size:30px; font-weight:bold}
+
+.adminbuy_chaxun{ width: 300px; margin: 100px auto 100px;}
+.adminbuy_chaxun li{ margin-bottom: 15px;}
+.adminbuy_chaxun .abkuang{ border-radius: 3px;width: 100%; border: 1px solid #ddd; height: 40px; box-sizing: border-box; padding: 0 10px;}
+.adminbuy_chaxun .abcha{ width: 100%; line-height: 40px; border: 0; border-radius: 3px; background: #69c; color: #fff; font-size:16px; cursor:pointer}
+.adminbuy_foot{text-align: center; padding: 20px; background: #333;}
+.adminbuy_foot p{font-size: 12px; color: #999}
+.adminbuy_foot a{color: #999; font-size: 12px;}
+
+.adminbuy_jg{ width: 700px; margin: 100px auto 100px;}
+.adminbuy_jg dl{position: relative;}
+.adminbuy_jg dl dt{ font-size: 20px; color:green; margin-bottom: 20px;}
+.adminbuy_jg dl dd{ line-height: 30px;}
+.adminbuy_jg dl span{ position: absolute; right: 0; top: 0;}
+.adminbuy_jg dl span p{ text-align:center; line-height:30px;}
+
+.nodata{ text-align:center; margin:100px auto; font-size:18px;}
+.back{ width:180px; margin:30px auto 50px;}
+.back a{ display:block; background:#69c; color:#fff; line-height:36px; border-radius:3px; text-align:center}
+
+@media screen and (max-width: 768px) {
+	.adminbuy_head{padding: 30px 0;}
+	.adminbuy_head p{font-size:24px;}
+	.adminbuy_chaxun{ width: 100%; margin: 50px 0 70px; padding: 0 15px; box-sizing: border-box;}
+    .adminbuy_jg{ width: 100%; margin: 50px 0 70px; box-sizing: border-box; padding: 0 15px;}
+	.adminbuy_jg dl span{position: initial; padding-top: 20px; display: inline-block;}
