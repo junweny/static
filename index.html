@@ -1,49 +1,70 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
-    <!-- 在这里添加你的CSS文件 -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+    <title>谱尼测试证书查询</title>
+    <meta name="keywords" content="PONY    谱尼测试">
+    <meta name="description" content="PONY    谱尼测试">
+    <meta name="author" content="www.zhidaweb.com" />
+    <link href="/skin/css/style.css" rel="stylesheet">
+    <link href="/skin/css/swiper-bundle.min.css" rel="stylesheet">
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js" type="text/javascript"></script>-->
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的网站</h1>
-        <p>这里是一些介绍性文字。</p>
-    </header>
-    <nav>
-        <!-- 导航菜单 -->
+<div class="adminbuy_head">
+    <p>谱尼测试证书查询</p>
+</div>
+
+<div class="adminbuy_banner">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="/static/upload/image/20250424/1745479607174762.jpg" width="100%"></div>
+
+            <div class="swiper-slide"><img src="/static/upload/image/20250424/1745479509846173.jpg" width="100%"></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="/skin/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</div>
+
+<div class="adminbuy_chaxun">
+    <form action="/?search/"  method="get">
+        <input type="hidden" name="search" >
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">服务</a></li>
-            <li><a href="#">联系方式</a></li>
+            <li><input type="text" class="abkuang" name="ext_bianhao" placeholder="报告编码" id="name" /></li>
+            <!--<li><input type="text" class="abkuang" name="ext_shoji" placeholder="手机" id="tel" /></li>-->
+            <li><input type="submit" value="查询"/ class="abcha" id="adminbuycx"></li>
         </ul>
-    </nav>
-    <main>
-        <!-- 主要内容 -->
-        <section>
-            <h2>章节标题</h2>
-            <p>这是一些示例文本，作为章节内容的一部分。</p>
-        </section>
-        <article>
-            <h2>文章标题</h2>
-            <p>这是另一段示例文本，代表一篇文章的内容。</p>
-        </article>
-    </main>
-    <aside>
-        <!-- 侧栏内容 -->
-        <h3>相关信息</h3>
-        <p>这里可以放置一些相关链接或广告等内容。</p>
-    </aside>
-    <footer>
-        <!-- 页脚 -->
-        <p>版权所有 ©️ 你的名字或公司名</p>
-    </footer>
-    <!-- 在这里添加你的JS文件 -->
-    <!-- <script src="scripts.js"></script> -->
+    </form>
+</div>
+
+<div class="adminbuy_foot">
+    <p>PONY    谱尼测试证书查询系统 <a href="http://beian.miit.gov.cn" target="_blank" rel="nofllow">苏ICP12345678</a></p>
+</div>
+<script>
+    $(function(){
+        $('#adminbuycx').click(function(){
+            if($('#name').val()==''){alert('请输入报名编码！'); $("#name").focus(); return false;}
+// 			if ($("#tel").val() == "") { alert("请输入你的手机！"); $("#tel").focus(); return false; } 
+// 			if (!$("#tel").val().match(/^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(16[0-9]{1})|(17[0-9]{1})|(18[0-9]{1})|(19[0-9]{1}))+\d{8})$/)) { alert("手机号码格式不正确！"); $("#tel").focus(); return false;} 
+        })
+    })
+</script>
 </body>
 </html>
