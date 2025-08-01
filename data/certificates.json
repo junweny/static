@@ -1,0 +1,32 @@
+{
+    "certificates": {
+        "BMFHVT82858S5072": {
+            "certificateNumber": "BMFHVT82858S5072",
+            "companyName": "驻马店市绅士餐饮管理有限公司",
+            "productName": "餐具",
+            "issueDate": "2025 年 05 月 14 日",
+            "pdfFile": "file/20250522/1747876902503329.pdf"
+        },
+        "BMFHVT82858S5075": {
+            "certificateNumber": "BMFHVT82858S5075",
+            "companyName": "驻马店市绅士餐饮管理有限公司",
+            "productName": "米饭",
+            "issueDate": "2025 年 05 月 14 日",
+            "pdfFile": "file/20250522/1747876902503335.pdf"
+        },
+        "BMFHVT82858S5076": {
+            "certificateNumber": "BMFHVT82858S5076",
+            "companyName": "驻马店市绅士餐饮管理有限公司",
+            "productName": "辣椒炒肉",
+            "issueDate": "2025 年 05 月 14 日",
+            "pdfFile": "file/20250522/1747876902503346.pdf"
+        },
+        "BMFHVT82858S5077": {
+            "certificateNumber": "BMFHVT82858S5077",
+            "companyName": "驻马店市绅士餐饮管理有限公司",
+            "productName": "红烧茄子",
+            "issueDate": "2025 年 05 月 14 日",
+            "pdfFile": "file/20250522/1747876902503358.pdf"
+        }
+    }
+} 
