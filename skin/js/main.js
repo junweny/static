@@ -44,11 +44,13 @@ $(function(){
                 $('#statusText').text('查询成功');
                 displayResult(data.certificates[reportNumber]);
             } else {
-                $('#statusText').text('未找到该报告编号的数据');
+                // 未找到数据时跳转到nodata.html
+                window.location.href = 'nodata.html';
             }
         },
         error: function(xhr, status, error) {
-            $('#statusText').text('查询失败：' + error);
+            // 查询失败时也跳转到nodata.html
+            window.location.href = 'nodata.html';
         }
     });
     
