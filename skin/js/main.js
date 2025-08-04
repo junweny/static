@@ -44,13 +44,15 @@ $(function(){
                 $('#statusText').text('查询成功');
                 displayResult(data.certificates[reportNumber]);
             } else {
-                // 未找到数据时跳转到nodata.html
-                window.location.href = 'nodata.html';
+                // 未找到数据时显示无数据提示
+                $('#statusText').text('查询成功');
+                $('#noDataContainer').show();
             }
         },
         error: function(xhr, status, error) {
-            // 查询失败时也跳转到nodata.html
-            window.location.href = 'nodata.html';
+            // 查询失败时也显示无数据提示
+            $('#statusText').text('查询成功');
+            $('#noDataContainer').show();
         }
     });
     
